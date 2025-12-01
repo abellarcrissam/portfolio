@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma. Crissam Abellar – Portfolio (Premium Rose Gold)</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        :root {
+            --rose-dark: #8a4a58;
+            --rose-gold: #c58fa3;
+            --rose-metallic: #e6c5cf;
+            --rose-gradient: linear-gradient(135deg, #8a4a58, #c58fa3, #e6c5cf);
+            --soft-cream: #fff7fa;
+            --text-dark: #3b2c31;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: var(--soft-cream);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        /* HEADER */
+        header {
+            background: var(--rose-gradient);
+            padding: 90px 20px;
+            text-align: center;
+            border-bottom: 8px solid var(--rose-dark);
+            animation: fadeDown 1.2s ease;
+            color: var(--white);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        header p {
+            margin-top: 14px;
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        .contact-line {
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            opacity: 0.9;
+        }
+
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* NAV */
+        nav {
+            background: var(--rose-metallic);
+            padding: 16px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(6px);
+        }
+        nav a {
+            margin: 0 18px;
+            color: var(--text-dark);
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        nav a:hover {
+            color: var(--rose-dark);
+        }
+
+        /* SECTIONS */
+        .section {
+            max-width: 950px;
+            margin: 50px auto;
+            background: var(--white);
+            padding: 45px;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+            animation: fadeUp 1.1s ease;
+            border-left: 5px solid var(--rose-dark);
+        }
+        .section h2 {
+            font-size: 28px;
+            color: var(--rose-dark);
+            margin-top: 0;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* BUTTONS */
+        .resume-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: var(--rose-gradient);
+            color: var(--white);
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .resume-btn:hover {
+            opacity: 0.85;
+        }
+
+        /* CONTACT FORM */
+        form input, form textarea {
+            width: 100%;
+            padding: 14px;
+            margin: 12px 0;
+            border-radius: 10px;
+            background: var(--soft-cream);
+            border: 1px solid var(--rose-metallic);
+            color: var(--text-dark);
+        }
+        form button {
+            padding: 14px 30px;
+            background: var(--rose-dark);
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        form button:hover {
+            background: var(--rose-gold);
+        }
+
+        footer {
+            margin-top: 70px;
+            text-align: center;
+            padding: 25px;
+            border-top: 3px solid var(--rose-dark);
+            color: var(--rose-dark);
+        }
+
+        /* MOBILE OPTIMIZATION */
+        @media (max-width: 768px) {
+            header h1 { font-size: 34px; }
+            header p { font-size: 15px; }
+            nav a { display: inline-block; margin: 8px; }
+            .section { padding: 25px; margin: 25px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ma. Crissam Abellar</h1>
+    <p>Virtual Assistant • Data Analyst • Operations Specialist</p>
+    <p class="contact-line">📩 abellarcrissam@gmail.com | 📱 +63 922 466 4119</p>
+</header>
+
+<nav>
+    <a href="#summary">Summary</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="summary" class="section">
+    <h2>Professional Summary</h2>
+    <p>Resourceful Virtual Assistant and Operations Analyst with expertise in forex datasets, workflow optimization, business operations, reporting, and client communication.</p>
+</section>
+
+<section id="skills" class="section">
+    <h2>Core Skills</h2>
+    <ul>
+        <li><i class="fa-solid fa-chart-line"></i> Data Analysis & Reporting</li>
+        <li><i class="fa-solid fa-arrow-trend-up"></i> Forex Trend Monitoring</li>
+        <li><i class="fa-solid fa-users-gear"></i> Service Delivery Optimization</li>
+        <li><i class="fa-solid fa-gears"></i> Process Improvement</li>
+        <li><i class="fa-solid fa-handshake"></i> Client & Stakeholder Management</li>
+        <li><i class="fa-solid fa-pen"></i> Administrative Support</li>
+        <li><i class="fa-solid fa-bullhorn"></i> Social Media Content Creation</li>
+    </ul>
+</section>
+
+<section id="experience" class="section">
+    <h2>Experience</h2>
+
+    <h3>Independent Contractor – Virtual Assistant (Forex & Data Analysis)</h3>
+    <p>Jan 2022 – Present</p>
+    <ul>
+        <li>Analyzed Commitment of Traders (CoT) data and created seasonal charts.</li>
+        <li>Managed and processed forex datasets ensuring accuracy.</li>
+        <li>Monitored currency market trends and compiled reports.</li>
+        <li>Improved data integrity through validation protocols.</li>
+        <li>Streamlined communication between analysts and clients.</li>
+    </ul>
+
+    <h3>Accenture Philippines – Senior Analyst (Team Lead)</h3>
+    <p>Oct 2020 – Jan 2022</p>
+    <ul>
+        <li>Led teams to optimize workflows and productivity.</li>
+        <li>Enhanced compliance standards and reporting accuracy.</li>
+        <li>Increased customer satisfaction through improved processes.</li>
+    </ul>
+
+    <h3>IQOR Philippines – Operations Analyst</h3>
+    <p>May 2020 – Oct 2020</p>
+    <ul>
+        <li>Optimized operational procedures and documentation.</li>
+        <li>Monitored KPIs to ensure high performance.</li>
+    </ul>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+        <li><strong>Forex Market Dashboard:</strong> Seasonal charting and visualization.</li>
+        <li><strong>Operations Optimization:</strong> Workflow improvements & reporting.</li>
+        <li><strong>Client Communication Suite:</strong> Automated templates and email management.</li>
+    </ul>
+</section>
+
+<section id="education" class="section">
+    <h2>Education</h2>
+    <p><strong>GAINTECH Technical Skills Development Center Inc.</strong><br>Computer Science – Apr 2009</p>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form action="mailto:abellarcrissam@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <br>
+    <a class="resume-btn" href="#">Download Résumé</a>
+</section>
+
+<footer>
+    © 2025 Ma. Crissam Abellar — Premium Rose Gold Portfolio Theme
+</footer>
+
+</body>
+</html>
